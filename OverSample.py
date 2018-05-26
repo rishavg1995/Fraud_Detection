@@ -42,8 +42,8 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'AgeOfPolicyHolder', 'PoliceReportFiled', 'WitnessPresent', 'AgentType',
        'NumberOfSuppliments', 'AddressChange_Claim', 'NumberOfCars',
        'BasePolicy', 'FraudFound_P'])
-sns.set_style('whitegrid')
-sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
+#sns.set_style('whitegrid')
+#sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
 
 
 # # OverSampling
@@ -69,8 +69,8 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'AgeOfPolicyHolder', 'PoliceReportFiled', 'WitnessPresent', 'AgentType',
        'NumberOfSuppliments', 'AddressChange_Claim', 'NumberOfCars',
        'BasePolicy', 'FraudFound_P'])
-sns.set_style('whitegrid')
-sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
+#sns.set_style('whitegrid')
+#sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
 
 
 # # Random Forest with Grid Search
