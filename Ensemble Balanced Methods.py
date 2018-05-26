@@ -32,7 +32,7 @@ X_train, X_test, y_train, y_test= train_test_split(X, y)
 
 # In[4]:
 
-
+'''
 p = np.c_[X_train,y_train]
 d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'PolicyNumber', 'RepNumber', 'Deductible', 'DriverRating', 'Year',
@@ -46,7 +46,7 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
 sns.set_style('whitegrid')
 sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
 
-
+'''
 # # Balance Cascade
 
 # In[5]:
@@ -60,8 +60,8 @@ X_res, y_res = bc.fit_sample(X_train, y_train)
 # In[7]:
 
 
-p = np.c_[X_res,y_res]
-d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
+#p = np.c_[X_res,y_res]
+'''d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'PolicyNumber', 'RepNumber', 'Deductible', 'DriverRating', 'Year',
        'Month', 'DayOfWeek', 'Make', 'AccidentArea', 'DayOfWeekClaimed',
        'MonthClaimed', 'Sex', 'MaritalStatus', 'Fault', 'PolicyType',
@@ -70,9 +70,9 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'AgeOfPolicyHolder', 'PoliceReportFiled', 'WitnessPresent', 'AgentType',
        'NumberOfSuppliments', 'AddressChange_Claim', 'NumberOfCars',
        'BasePolicy', 'FraudFound_P'])
-sns.set_style('whitegrid')
-sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
-
+#sns.set_style('whitegrid')
+#sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
+'''
 
 # # Random Forest with Grid Search
 
@@ -125,8 +125,8 @@ X_res, y_res = ee.fit_sample(X_train, y_train)
 # In[ ]:
 
 
-p = np.c_[X_res,y_res]
-d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
+#p = np.c_[X_res,y_res]
+#d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'PolicyNumber', 'RepNumber', 'Deductible', 'DriverRating', 'Year',
        'Month', 'DayOfWeek', 'Make', 'AccidentArea', 'DayOfWeekClaimed',
        'MonthClaimed', 'Sex', 'MaritalStatus', 'Fault', 'PolicyType',
