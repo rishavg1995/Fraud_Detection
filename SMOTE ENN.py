@@ -90,7 +90,7 @@ print(confusion_matrix(y_test,grid_predictions))
 print(classification_report(y_test,grid_predictions))
 from sklearn.metrics import accuracy_score
 print( accuracy_score(y_test, grid_predictions))
-
+print(grid.best_params_)
 
 # # Gradient Boosting Method with Grid Search
 
@@ -110,4 +110,4 @@ print(confusion_matrix(y_test,grid_predictions))
 print(classification_report(y_test,grid_predictions))
 from sklearn.metrics import accuracy_score
 print( accuracy_score(y_test, grid_predictions) )
-
+print(grid.best_params_)
