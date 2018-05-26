@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 import numpy as np
 from sklearn.metrics import confusion_matrix,recall_score,precision_recall_curve,auc,roc_curve,roc_auc_score,classification_report
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[2]:
@@ -43,8 +43,8 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'AgeOfPolicyHolder', 'PoliceReportFiled', 'WitnessPresent', 'AgentType',
        'NumberOfSuppliments', 'AddressChange_Claim', 'NumberOfCars',
        'BasePolicy', 'FraudFound_P'])
-sns.set_style('whitegrid')
-sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
+#sns.set_style('whitegrid')
+#sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
 
 
 # # SMOTE
@@ -72,8 +72,8 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'AgeOfPolicyHolder', 'PoliceReportFiled', 'WitnessPresent', 'AgentType',
        'NumberOfSuppliments', 'AddressChange_Claim', 'NumberOfCars',
        'BasePolicy', 'FraudFound_P'])
-sns.set_style('whitegrid')
-sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
+#sns.set_style('whitegrid')
+#sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
 
 
 # # Random Forest with Grid Search
@@ -92,7 +92,7 @@ print(confusion_matrix(y_test,grid_predictions))
 print(classification_report(y_test,grid_predictions))
 from sklearn.metrics import accuracy_score
 print( accuracy_score(y_test, grid_predictions))
-
+print( grid.best_params_)
 
 # # Gradient Boosting Method with Grid Search
 
@@ -112,4 +112,4 @@ print(confusion_matrix(y_test,grid_predictions))
 print(classification_report(y_test,grid_predictions))
 from sklearn.metrics import accuracy_score
 print( accuracy_score(y_test, grid_predictions) )
-
+print( grid.best_params_)
