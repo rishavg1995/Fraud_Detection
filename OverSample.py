@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 import numpy as np
 from sklearn.metrics import confusion_matrix,recall_score,precision_recall_curve,auc,roc_curve,roc_auc_score,classification_report
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[2]:
