@@ -124,7 +124,7 @@ X_res, y_res = ee.fit_sample(X_train, y_train)
 
 # In[ ]:
 
-
+'''
 #p = np.c_[X_res,y_res]
 #d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'PolicyNumber', 'RepNumber', 'Deductible', 'DriverRating', 'Year',
@@ -137,7 +137,7 @@ X_res, y_res = ee.fit_sample(X_train, y_train)
        'BasePolicy', 'FraudFound_P'])
 sns.set_style('whitegrid')
 sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
-
+'''
 
 # # Random Forest with Grid Search
 
