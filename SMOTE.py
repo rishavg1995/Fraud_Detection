@@ -32,7 +32,7 @@ X_train, X_test, y_train, y_test= train_test_split(X, y)
 
 # In[4]:
 
-
+'''
 p = np.c_[X_train,y_train]
 d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'PolicyNumber', 'RepNumber', 'Deductible', 'DriverRating', 'Year',
@@ -45,7 +45,7 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'BasePolicy', 'FraudFound_P'])
 #sns.set_style('whitegrid')
 #sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
-
+'''
 
 # # SMOTE
 
@@ -61,7 +61,7 @@ X_res, y_res = sm.fit_sample(X_train, y_train)
 
 # In[6]:
 
-
+'''
 p = np.c_[X_res,y_res]
 d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'PolicyNumber', 'RepNumber', 'Deductible', 'DriverRating', 'Year',
@@ -74,7 +74,7 @@ d = pd.DataFrame(p, columns = ['WeekOfMonth', 'WeekOfMonthClaimed', 'Age',
        'BasePolicy', 'FraudFound_P'])
 #sns.set_style('whitegrid')
 #sns.countplot(x = 'FraudFound_P', data = d, palette = 'RdBu_r')
-
+'''
 
 # # Random Forest with Grid Search
 
